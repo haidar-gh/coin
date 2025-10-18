@@ -62,7 +62,7 @@ export default function CoinsTable() {
 
     const body = {
       page: String(page),
-      limit: '7',
+      limit: '9',
       search: debouncedSearch
     }
 

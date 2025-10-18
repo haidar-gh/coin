@@ -79,7 +79,7 @@ const Chart = (props: { id: string }) => {
   });
 
 
-  if (isPending) return <div className="p-4 text-center">در حال بارگذاری...</div>;
+  
 
   return (
     <div className=" lg:mb-[108px] md:mb-[111px] mb-[39px] chart px-[66px] pt-[20px] pb-[11px] shadow ">
@@ -136,7 +136,7 @@ const Chart = (props: { id: string }) => {
           </div>
         <div className='flex justify-between items-center gap-3'>
           <span className='w-[7px] h-[7px] rounded-[50%] bg-[#F7931A] '></span>
-          <span>قیمت <span>{data[0].name}</span></span>
+          <span>قیمت <span>{data?.[0]?.name}</span></span>
           </div>
       </div>
     </div>
